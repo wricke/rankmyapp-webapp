@@ -5,7 +5,6 @@ Projeto criado para o teste técnico da [RankMyApp](https://www.rankmyapp.com/pt
 - ReactJS
 - Redux
 - Axios
-- Redux
 - redux-persist
 - Material UI
 
