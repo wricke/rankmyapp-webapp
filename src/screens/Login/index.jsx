@@ -5,7 +5,6 @@ import { TextField, Button, Box } from '@material-ui/core';
 import { login } from '../../store/auth/actions';
 import api from '../../services/api';
 
-import { form as formStyle } from './styles';
 import { toast } from 'react-toastify';
 
 class Login extends Component {
@@ -62,12 +61,14 @@ class Login extends Component {
             <TextField
               name="email"
               label="E-mail"
+              type="email"
               value={email}
               onChange={this.handleChange}
             />
             <TextField
               name="password"
               label="Senha"
+              type="password"
               value={password}
               onChange={this.handleChange}
             />
