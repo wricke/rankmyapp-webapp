@@ -8,7 +8,7 @@ export const constants = {
  * @param {{ email: string time: string keywords: string }} payload Token and user to save.
  */
 export const add = payload => ({
-  type: constants.LOGIN,
+  type: constants.ADD,
   payload,
 });
 
@@ -17,6 +17,6 @@ export const add = payload => ({
  * @param {[{ email: string time: string keywords: string }]} payload
  */
 export const save = payload => ({
-  type: constants.ADD,
+  type: constants.SAVE,
   payload,
 });
