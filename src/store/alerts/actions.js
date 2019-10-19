@@ -1,10 +1,11 @@
 export const constants = {
   ADD: 'ALERT_ADD',
   SAVE: 'ALERT_SAVE',
+  DELETE: 'ALERT_DELETE',
 };
 
 /**
- * @description ADd item in array of alerts.
+ * @description Add item in array of alerts.
  * @param {{ email: string time: string keywords: string }} payload Token and user to save.
  */
 export const add = payload => ({
@@ -20,3 +21,12 @@ export const save = payload => ({
   type: constants.SAVE,
   payload,
 });
+
+/**
+ * @description Remove item from array of alerts.
+ * @param {String} payload Id of alert.
+ */
+export const remove = payload => ({
+  type: constants.DELETE,
+  payload,
+})
